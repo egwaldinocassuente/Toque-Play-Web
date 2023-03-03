@@ -1,15 +1,13 @@
-import { Box, Button, ChakraProvider, Flex, Image, Link, Stack, Text, FormControl, FormLabel } from "@chakra-ui/react";
-
-
-// import { useState } from "react";
+import React from "react";
+import { Box, Button, ChakraProvider, Flex, Image, Link, Stack, Text, FormControl, FormLabel, InputGroup } from "@chakra-ui/react";
 
 import { BsApple } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 
+import { PhoneInput, PhoneInputResponseType } from "react-simple-phone-input";
+import "react-simple-phone-input/dist/style.css";
 
 export default function Loginpage() {
-    
-    // const [value, setValue] = useState()
 
     return (
     <>
@@ -49,17 +47,14 @@ export default function Loginpage() {
 
                     <FormControl w='472px' fontSize='20px' fontWeight='light'>
                         <FormLabel>Número de telefone</FormLabel>
-                        {/* <PhoneInput 
-                        type='tel' 
-                        placeholder='Digite o seu número de telefone'
-                        _placeholder={{color: '#C0C0C0'}} 
-                        bgColor='#ffffff' 
-                        color='#000' autoComplete="tel" 
-                        pattern="^$[0-9]" required international
-                        countryCallingCodeEditable={false}
-                        defaultCountry="AO"
-                        value={value}
-                        onChange={_event => console.log(setValue)}/> */}
+                        <InputGroup>
+                            <PhoneInput
+                                country="AO"
+                                placeholder="Add your phone"
+                                onChange={(data: PhoneInputResponseType) => console.log(data)}
+                            />
+                        
+                        </InputGroup>
                     </FormControl>
                     
                     <Button
