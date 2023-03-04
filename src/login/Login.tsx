@@ -5,8 +5,8 @@ import { BsApple } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 
 import { PhoneInput, PhoneInputResponseType } from "react-simple-phone-input";
-import "react-simple-phone-input/dist/style.css";
 
+import "../../src/button/style.css";
 export default function Loginpage() {
 
     return (
@@ -22,7 +22,7 @@ export default function Loginpage() {
             >
                 <Flex
                 h='90%'
-                w='520px'
+                w='372px'
                 direction='column'
                 display='flex'
                 alignItems='center'
@@ -46,14 +46,14 @@ export default function Loginpage() {
                         </Button>
                     </Stack>
 
-                    <FormControl w='472px' fontSize='20px' fontWeight='light'>
+                    <FormControl w='372px' fontSize='17px' fontWeight='light'>
                         <FormLabel>Número de telefone</FormLabel>
                             <PhoneInput
                                 country="AO"
-                                placeholder="Add your phone"
+                                placeholder="Digite o seu número de telefone"
                                 onChange={(data: PhoneInputResponseType) => console.log(data)}
                             />
-                    </FormControl>
+                        </FormControl>
                     
                     <Button
                         bgColor='#CC3032'
