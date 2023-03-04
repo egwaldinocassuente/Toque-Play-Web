@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, ChakraProvider, Flex, Image, Link, Stack, Text, FormControl, FormLabel, InputGroup } from "@chakra-ui/react";
+import { Box, Button, ChakraProvider, Flex, Image, Link, Stack, Text, FormControl, FormLabel } from "@chakra-ui/react";
 
 import { BsApple } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
@@ -27,6 +27,7 @@ export default function Loginpage() {
                 display='flex'
                 alignItems='center'
                 gap='50px'
+                color='#ffffff'
                 >
                     <Image              
                         src='img/logotoqueplay.jpg'
@@ -47,14 +48,11 @@ export default function Loginpage() {
 
                     <FormControl w='472px' fontSize='20px' fontWeight='light'>
                         <FormLabel>Número de telefone</FormLabel>
-                        <InputGroup>
                             <PhoneInput
                                 country="AO"
                                 placeholder="Add your phone"
                                 onChange={(data: PhoneInputResponseType) => console.log(data)}
                             />
-                        
-                        </InputGroup>
                     </FormControl>
                     
                     <Button
