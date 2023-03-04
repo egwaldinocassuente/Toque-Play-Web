@@ -22,32 +22,32 @@ export default function Loginpage() {
             >
                 <Flex
                 h='90%'
-                w='372px'
+                w='472px'
                 direction='column'
                 display='flex'
                 alignItems='center'
-                gap='50px'
+                gap='40px'
                 color='#ffffff'
                 >
                     <Image              
                         src='img/logotoqueplay.jpg'
                     />
 
-                    <Text fontSize='40px'>Iniciar sessão</Text>
+                    <Text fontSize='30px'>Iniciar sessão</Text>
 
-                    <Text fontSize='20px' >Ainda não possui uma conta no ToquePlay? <Link href="#" color='#CC3032' fontSize='20px' >REGISTAR-SE</Link></Text>
+                    <Text fontSize='18px' >Ainda não possui uma conta no ToquePlay? <Link href="#" color='#CC3032' fontSize='18px' >REGISTAR-SE</Link></Text>
 
-                    <Stack direction='row' spacing={4} w='472px'>
-                        <Button leftIcon={<FcGoogle />} color='#000' variant='none' bgColor='#FAFAFA' borderRadius='100px'>
+                    <Stack direction='row' spacing={4} w='372px' justifyContent='center'>
+                        <Button leftIcon={<FcGoogle />} color='#000' variant='none' bgColor='#FAFAFA' w='194px' justifyContent='space-around' borderRadius='100px'>
                             GOOGLE
                         </Button>
-                        <Button leftIcon={<BsApple />}  color='#000' variant='none' bgColor='#FAFAFA' borderRadius='100px'>
+                        <Button leftIcon={<BsApple />}  color='#000' variant='none' bgColor='#FAFAFA' w='194px' justifyContent='space-around' borderRadius='100px'>
                             APPLE
                         </Button>
                     </Stack>
 
-                    <FormControl w='372px' fontSize='17px' fontWeight='light'>
-                        <FormLabel>Número de telefone</FormLabel>
+                    <FormControl w='372px' fontSize='16px'>
+                        <FormLabel fontSize='16px' fontWeight='normal' >Número de telefone</FormLabel>
                             <PhoneInput
                                 country="AO"
                                 placeholder="Digite o seu número de telefone"
@@ -59,11 +59,13 @@ export default function Loginpage() {
                         bgColor='#CC3032'
                         borderRadius='100px'
                         variant='none'
-                        w='472px'
+                        w='372px'
                         
                     >
                         INICIAR SESSÃO
                     </Button>
+                    
+                    <Text textAlign='center' fontSize='14px'>Este site está protegido por reCAPTCHA,{''} <Link href='#' color='#CC3032'>POLITICA DE PRIVACIDADE</Link> {''} e{''} <Link href='#' color='#CC3032'>TERMOS DE UTILIZAÇÃO</Link> {''}da Google aplicáveis.</Text>
                         
                 </Flex>
                 
